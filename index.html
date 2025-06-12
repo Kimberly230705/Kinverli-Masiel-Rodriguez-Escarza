@@ -8,58 +8,69 @@
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      background: #f3e8ff;
+      background: linear-gradient(to top right, #f3e8ff, #ede9fe);
       color: #3b0764;
       margin: 0;
       padding: 0;
     }
     .container {
-      max-width: 900px;
-      margin: 30px auto;
+      max-width: 960px;
+      margin: 40px auto;
       background: white;
-      padding: 30px;
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      padding: 40px;
+      border-radius: 30px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
     }
     h1 {
-      font-size: 28px;
-      margin-bottom: 10px;
+      font-size: 32px;
+      color: #5b21b6;
+      margin-bottom: 20px;
     }
     p {
       font-size: 16px;
-      margin-bottom: 20px;
+      margin-bottom: 16px;
     }
     .section {
       margin-bottom: 30px;
     }
     .section h2 {
       font-size: 20px;
+      font-weight: 600;
       color: #6b21a8;
       margin-bottom: 10px;
     }
     ul {
       padding-left: 20px;
+      margin: 0;
     }
     ul li {
-      margin-bottom: 6px;
+      margin-bottom: 8px;
     }
     .card {
       background: #ede9fe;
       padding: 20px;
-      border-radius: 15px;
-      margin-bottom: 15px;
+      border-radius: 20px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
     }
     .contact-button {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
       background: #8b5cf6;
       color: white;
-      padding: 12px 20px;
+      padding: 14px 24px;
       text-decoration: none;
-      border-radius: 10px;
+      border-radius: 12px;
       font-weight: 600;
+      font-size: 16px;
+      transition: background 0.3s;
     }
     .contact-button:hover {
       background: #7c3aed;
+    }
+    .contact-button::before {
+      content: "📩";
+      margin-right: 10px;
     }
   </style>
 </head>
@@ -114,7 +125,7 @@
     </div>
 
     <div class="section">
-      <a href="mailto:kinverli@example.com" class="contact-button">📩 Contáctame</a>
+      <a href="mailto:kinverli@example.com" class="contact-button">Contáctame</a>
     </div>
   </div>
 </body>
