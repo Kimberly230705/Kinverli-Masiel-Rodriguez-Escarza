@@ -6,93 +6,95 @@
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f8f5ff;
-      color: #333;
+      background-color: #f4e9ff;
       margin: 0;
       padding: 0;
     }
 
-    .container {
-      max-width: 900px;
+    .card {
+      max-width: 800px;
       margin: 50px auto;
-      background-color: white;
+      background-color: #fff;
+      border-radius: 20px;
       padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 10px 25px rgba(138, 43, 226, 0.2);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
     }
 
-    h1 {
-      color: #6a1b9a;
-      font-size: 28px;
+    .header {
+      grid-column: span 2;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 26px;
+      color: #5e2c91;
       margin-bottom: 10px;
     }
 
-    .line {
-      height: 2px;
-      background-color: #ba68c8;
-      margin-bottom: 25px;
+    .header p {
+      font-size: 16px;
+      color: #444;
+      max-width: 600px;
+      margin: 0 auto 20px;
     }
 
-    section {
-      margin-bottom: 30px;
+    .box {
+      background-color: #f0e6ff;
+      border-radius: 15px;
+      padding: 20px;
     }
 
     h2 {
       color: #6a1b9a;
-      font-size: 20px;
+      font-size: 18px;
       margin-bottom: 10px;
     }
 
     ul {
-      list-style-type: disc;
-      padding-left: 20px;
+      list-style: none;
+      padding-left: 0;
     }
 
-    .highlight-box {
-      background-color: #f3e5f5;
-      padding: 15px;
-      border-left: 5px solid #ab47bc;
-      border-radius: 8px;
-      margin-bottom: 30px;
-    }
-
-    .contact-button {
+    ul li::before {
+      content: "\2022";
+      color: #6a1b9a;
       display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+
+    .contact-btn {
+      grid-column: span 2;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .contact-btn a {
+      text-decoration: none;
       background-color: #7e57c2;
       color: white;
-      padding: 10px 20px;
+      padding: 12px 30px;
       border-radius: 30px;
-      text-decoration: none;
       font-weight: bold;
-      margin-top: 20px;
+      transition: background-color 0.3s;
     }
 
-    .contact-button:hover {
+    .contact-btn a:hover {
       background-color: #6a1b9a;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Kinverli Masiel Rodríguez Escarza</h1>
-    <div class="line"></div>
-
-    <div class="highlight-box">
-      <p>
-        Tengo 19 años y actualmente estudio la carrera de Ingeniería Industrial en la Universidad Católica San Pablo. 
-        Me considero una persona proactiva, empática y con muchas ganas de aprender. 
-        Me apasiona encontrar soluciones prácticas a los problemas, trabajar en equipo y seguir creciendo tanto personal como profesionalmente.
-      </p>
-      <p>
-        Me interesa especialmente el área de gestión de procesos y mejora continua, y busco desarrollar habilidades 
-        que me permitan aportar valor en cualquier entorno laboral.
-      </p>
-      <p>
-        Además, disfruto participar en proyectos colaborativos y siempre busco dar lo mejor de mí en cada desafío.
-      </p>
+  <div class="card">
+    <div class="header">
+      <h1>Kinverli Masiel Rodríguez Escarza</h1>
+      <p>Tengo 19 años y actualmente estudio la carrera de Ingeniería Industrial en la Universidad Católica San Pablo. Me considero una persona proactiva, empática y con muchas ganas de aprender. Me apasiona encontrar soluciones prácticas a los problemas, trabajar en equipo y seguir creciendo tanto personal como profesionalmente.<br><br>Me interesa especialmente el área de gestión de procesos y mejora continua, y busco desarrollar habilidades que me permitan aportar valor en cualquier entorno laboral.<br><br>Además, disfruto participar en proyectos colaborativos y siempre busco dar lo mejor de mí en cada desafío.</p>
     </div>
 
-    <section>
+    <div class="box">
       <h2>Aptitudes</h2>
       <ul>
         <li>Empática</li>
@@ -100,10 +102,10 @@
         <li>Proactiva</li>
         <li>Carismática</li>
       </ul>
-    </section>
+    </div>
 
-    <section>
-      <h2>Cursos que estoy llevando</h2>
+    <div class="box">
+      <h2>Cursos</h2>
       <ul>
         <li>Cálculo I</li>
         <li>Física II</li>
@@ -112,22 +114,24 @@
         <li>Matemática II</li>
         <li>Amar o Defender</li>
       </ul>
-    </section>
+    </div>
 
-    <section>
+    <div class="box">
       <h2>Profesor</h2>
       <p>Ernesto Cuadros Vargas</p>
-    </section>
+    </div>
 
-    <section>
-      <h2>Compañeras de clase</h2>
+    <div class="box">
+      <h2>Compañeras</h2>
       <ul>
         <li>Cristell Zuleyka Ranilla Vilca</li>
         <li>Joselyn Gardenia Canchumani Tito</li>
       </ul>
-    </section>
+    </div>
 
-    <a href="mailto:tuemail@ejemplo.com" class="contact-button">📩 Contáctame</a>
+    <div class="contact-btn">
+      <a href="mailto:tuemail@ejemplo.com">📩 Contáctame</a>
+    </div>
   </div>
 </body>
 </html>
