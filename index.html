@@ -2,135 +2,132 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Perfil de Kinverli Masiel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil de Kinverli</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f4e9ff;
       margin: 0;
       padding: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f6f0fc;
+      color: #333;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .profile {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .profile h1 {
+      font-size: 2rem;
+      color: #5e2b97;
+    }
+
+    .profile p {
+      font-size: 1rem;
+      margin-top: 0.5rem;
+      line-height: 1.6;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
     }
 
     .card {
-      max-width: 800px;
-      margin: 50px auto;
-      background-color: #fff;
-      border-radius: 20px;
-      padding: 40px;
-      box-shadow: 0 10px 25px rgba(138, 43, 226, 0.2);
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 30px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      padding: 1.5rem;
     }
 
-    .header {
-      grid-column: span 2;
-      text-align: center;
-    }
-
-    .header h1 {
-      font-size: 26px;
-      color: #5e2c91;
-      margin-bottom: 10px;
-    }
-
-    .header p {
-      font-size: 16px;
-      color: #444;
-      max-width: 600px;
-      margin: 0 auto 20px;
-    }
-
-    .box {
-      background-color: #f0e6ff;
-      border-radius: 15px;
-      padding: 20px;
-    }
-
-    h2 {
-      color: #6a1b9a;
-      font-size: 18px;
-      margin-bottom: 10px;
+    .card h2 {
+      color: #5e2b97;
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
     }
 
     ul {
-      list-style: none;
-      padding-left: 0;
+      list-style: disc;
+      padding-left: 1.25rem;
     }
 
-    ul li::before {
-      content: "\2022";
-      color: #6a1b9a;
+    .button {
       display: inline-block;
-      width: 1em;
-      margin-left: -1em;
-    }
-
-    .contact-btn {
-      grid-column: span 2;
-      text-align: center;
-      margin-top: 10px;
-    }
-
-    .contact-btn a {
-      text-decoration: none;
-      background-color: #7e57c2;
+      margin-top: 2rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #815ac0;
       color: white;
-      padding: 12px 30px;
-      border-radius: 30px;
-      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
       transition: background-color 0.3s;
     }
 
-    .contact-btn a:hover {
-      background-color: #6a1b9a;
+    .button:hover {
+      background-color: #6a41a2;
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <div class="header">
+  <div class="container">
+    <div class="profile">
       <h1>Kinverli Masiel Rodríguez Escarza</h1>
-      <p>Tengo 19 años y actualmente estudio la carrera de Ingeniería Industrial en la Universidad Católica San Pablo. Me considero una persona proactiva, empática y con muchas ganas de aprender. Me apasiona encontrar soluciones prácticas a los problemas, trabajar en equipo y seguir creciendo tanto personal como profesionalmente.<br><br>Me interesa especialmente el área de gestión de procesos y mejora continua, y busco desarrollar habilidades que me permitan aportar valor en cualquier entorno laboral.<br><br>Además, disfruto participar en proyectos colaborativos y siempre busco dar lo mejor de mí en cada desafío.</p>
+      <p>
+        Tengo 19 años y actualmente estudio la carrera de Ingeniería Industrial en la Universidad Católica San Pablo.
+        Me considero una persona proactiva, empática y con muchas ganas de aprender. Me apasiona encontrar soluciones prácticas a los problemas,
+        trabajar en equipo y seguir creciendo tanto personal como profesionalmente.<br><br>
+        Me interesa especialmente el área de gestión de procesos y mejora continua, y busco desarrollar habilidades que me permitan aportar valor en cualquier entorno laboral.<br><br>
+        Además, disfruto participar en proyectos colaborativos y siempre busco dar lo mejor de mí en cada desafío.
+      </p>
     </div>
 
-    <div class="box">
-      <h2>Aptitudes</h2>
-      <ul>
-        <li>Empática</li>
-        <li>Honesta</li>
-        <li>Proactiva</li>
-        <li>Carismática</li>
-      </ul>
+    <div class="grid">
+      <div class="card">
+        <h2>🌟 Aptitudes</h2>
+        <ul>
+          <li>Empática</li>
+          <li>Honesta</li>
+          <li>Proactiva</li>
+          <li>Carismática</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>📚 Cursos</h2>
+        <ul>
+          <li>Cálculo I</li>
+          <li>Física II</li>
+          <li>Fundamentos de Informática</li>
+          <li>Introducción a la filosofía</li>
+          <li>Matemática II</li>
+          <li>Amar o defender</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>👨‍🏫 Profesor</h2>
+        <p>Ernesto Cuadros Vargas</p>
+      </div>
+
+      <div class="card">
+        <h2>👯‍♀️ Compañeras</h2>
+        <ul>
+          <li>Cristell Zuleyka Ranilla Vilca</li>
+          <li>Joselyn Gardenia Canchumani Tito</li>
+        </ul>
+      </div>
     </div>
 
-    <div class="box">
-      <h2>Cursos</h2>
-      <ul>
-        <li>Cálculo I</li>
-        <li>Física II</li>
-        <li>Fundamentos de Informática</li>
-        <li>Introducción a la Filosofía</li>
-        <li>Matemática II</li>
-        <li>Amar o Defender</li>
-      </ul>
-    </div>
-
-    <div class="box">
-      <h2>Profesor</h2>
-      <p>Ernesto Cuadros Vargas</p>
-    </div>
-
-    <div class="box">
-      <h2>Compañeras</h2>
-      <ul>
-        <li>Cristell Zuleyka Ranilla Vilca</li>
-        <li>Joselyn Gardenia Canchumani Tito</li>
-      </ul>
-    </div>
-
-    <div class="contact-btn">
-      <a href="mailto:tuemail@ejemplo.com">📩 Contáctame</a>
+    <div class="profile" style="margin-top: 2rem;">
+      <a class="button" href="#">Contáctame</a>
     </div>
   </div>
 </body>
