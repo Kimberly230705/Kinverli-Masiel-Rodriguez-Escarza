@@ -6,117 +6,90 @@
   <title>Kinverli Masiel Rodríguez Escarza</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
     body {
       font-family: 'Inter', sans-serif;
-      background: linear-gradient(to bottom right, #f3e8ff, #ede9fe);
-      padding: 2rem;
-      color: #3b0764;
+      background: linear-gradient(to top right, #f3e8ff, #ede9fe);
+      color: #1e1b4b;
+      margin: 0;
+      padding: 40px 20px;
     }
     .container {
-      max-width: 900px;
+      max-width: 960px;
       margin: auto;
       background: white;
-      border-radius: 20px;
-      padding: 2rem;
-      box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+      padding: 40px;
+      border-radius: 30px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
     }
-    .header {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      margin-bottom: 2rem;
+    h1 {
+      font-size: 36px;
+      font-weight: 700;
+      color: #6d28d9;
+      margin-bottom: 10px;
     }
-    .header .avatar {
-      background: #c4b5fd;
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-    }
-    .header-text h1 {
-      font-size: 1.8rem;
+    .subtitle {
+      font-size: 18px;
       color: #4c1d95;
+      margin-bottom: 30px;
     }
-    .header-text p {
-      margin-top: 0.4rem;
-      font-size: 1rem;
+    .section {
+      margin-bottom: 30px;
     }
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.5rem;
-      margin-top: 2rem;
+    .section h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #5b21b6;
+      margin-bottom: 10px;
     }
     .card {
       background: #f5f3ff;
-      padding: 1.2rem;
-      border-radius: 15px;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
     }
-    .card h2 {
-      font-size: 1.2rem;
-      margin-bottom: 0.8rem;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
+    ul {
+      padding-left: 20px;
+      margin: 0;
     }
-    .card h2::before {
-      content: '📘';
+    li {
+      font-size: 16px;
+      margin-bottom: 8px;
     }
-    .card.aptitudes h2::before {
-      content: '🧠';
-    }
-    .card.profesor h2::before {
-      content: '👨‍🏫';
-    }
-    .card.companeras h2::before {
-      content: '👭';
-    }
-    .card ul {
-      list-style: disc;
-      margin-left: 1.2rem;
-    }
-    .card p {
-      margin-left: 0.5rem;
-    }
-    .contacto {
-      display: flex;
-      justify-content: center;
-      margin-top: 2rem;
-    }
-    .btn-contacto {
+    .contact-button {
+      display: inline-block;
       background: #8b5cf6;
       color: white;
-      font-size: 1rem;
-      padding: 0.8rem 1.6rem;
-      border: none;
+      padding: 14px 24px;
       border-radius: 12px;
-      cursor: pointer;
+      font-weight: 600;
+      font-size: 16px;
       text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.6rem;
+      transition: background 0.3s;
     }
-    .btn-contacto:hover {
+    .contact-button:hover {
       background: #7c3aed;
+    }
+    .contact-button::before {
+      content: "📩";
+      margin-right: 10px;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="header">
-      <div class="avatar"></div>
-      <div class="header-text">
-        <h1>Kinverli Masiel Rodríguez Escarza</h1>
-        <p>Tengo 19 años, estudio la carrera de Ingeniería Industrial y voy en mi 3er año.</p>
-      </div>
+    <h1>Kinverli Masiel Rodríguez Escarza</h1>
+    <div class="subtitle">
+      Tengo 19 años y actualmente estudio la carrera de Ingeniería Industrial en la Universidad Católica San Pablo. Me considero una persona proactiva, empática y con muchas ganas de aprender. Me apasiona encontrar soluciones prácticas a los problemas, trabajar en equipo y seguir creciendo tanto personal como profesionalmente.
+      <br><br>
+      Me interesa especialmente el área de gestión de procesos y mejora continua, y busco desarrollar habilidades que me permitan aportar valor en cualquier entorno laboral.
+      <br><br>
+      Además, disfruto participar en proyectos colaborativos y siempre busco dar lo mejor de mí en cada desafío.
     </div>
-    <div class="grid">
-      <div class="card aptitudes">
-        <h2>Aptitudes</h2>
+
+    <div class="section">
+      <h2>📌 Aptitudes</h2>
+      <div class="card">
         <ul>
           <li>Empática</li>
           <li>Honesta</li>
@@ -124,31 +97,41 @@
           <li>Carismática</li>
         </ul>
       </div>
-      <div class="card cursos">
-        <h2>Cursos</h2>
+    </div>
+
+    <div class="section">
+      <h2>📚 Cursos</h2>
+      <div class="card">
         <ul>
           <li>Cálculo I</li>
           <li>Física II</li>
           <li>Fundamentos de Informática</li>
           <li>Antropología</li>
           <li>Matemática II</li>
-          <li>Amar o defender</li>
+          <li>Amar o Defender</li>
         </ul>
       </div>
-      <div class="card profesor">
-        <h2>Profesor</h2>
-        <p>Ernesto Cuadros Vargas</p>
+    </div>
+
+    <div class="section">
+      <h2>👨‍🏫 Profesor</h2>
+      <div class="card">
+        Ernesto Cuadros Vargas
       </div>
-      <div class="card companeras">
-        <h2>Compañeras</h2>
+    </div>
+
+    <div class="section">
+      <h2>👩‍🎓 Compañeras de clase</h2>
+      <div class="card">
         <ul>
           <li>Cristell Zuleyka Ranilla Vilca</li>
           <li>Joselyn Gardenia Canchumani Tito</li>
         </ul>
       </div>
     </div>
-    <div class="contacto">
-      <a class="btn-contacto" href="mailto:kinverli@example.com">📩 Contáctame</a>
+
+    <div class="section">
+      <a href="mailto:kinverli@example.com" class="contact-button">Contáctame</a>
     </div>
   </div>
 </body>
