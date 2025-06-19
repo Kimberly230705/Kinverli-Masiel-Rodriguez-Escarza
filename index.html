@@ -70,6 +70,8 @@
       text-decoration: none;
       transition: background 0.3s;
       text-align: center;
+      border: none;
+      cursor: pointer;
     }
     .contact-button:hover {
       background: #7c3aed;
@@ -135,8 +137,27 @@
     </div>
 
     <div class="section" style="text-align:center;">
-      <a href="mailto:kinverli@example.com" class="contact-button">Contáctame</a>
+      <button class="contact-button" onclick="mostrarContacto()">Contáctame</button>
+    </div>
+
+    <div id="contacto" style="display:none; text-align:center; margin-top: 30px;">
+      <div class="card" style="display:inline-block; text-align:left;">
+        <p><strong>🔗 LinkedIn:</strong> 
+          <a href="https://www.linkedin.com/in/kinverli-masiel-rodriguez-escarza-a47600367/?originalSubdomain=pe" 
+             target="_blank" style="color:#6d28d9; font-weight:bold;">
+            Ir a mi perfil
+          </a>
+        </p>
+        <p><strong>✉️ Correo:</strong> kinverli.rodriguez@ucsp.edu.com</p>
+      </div>
     </div>
   </div>
+
+  <script>
+    function mostrarContacto() {
+      var div = document.getElementById("contacto");
+      div.style.display = (div.style.display === "none") ? "block" : "none";
+    }
+  </script>
 </body>
 </html>
