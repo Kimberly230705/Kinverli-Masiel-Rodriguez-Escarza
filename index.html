@@ -80,6 +80,38 @@
       content: "📩";
       margin-right: 10px;
     }
+
+    #contacto {
+      display: none;
+      text-align: center;
+      margin-top: 30px;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    #contacto.mostrar {
+      display: block;
+      opacity: 1;
+    }
+
+    .contact-card {
+      background: #ede9fe;
+      display: inline-block;
+      padding: 20px;
+      border-radius: 20px;
+      text-align: left;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .contact-card a {
+      color: #6d28d9;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .contact-card a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -140,11 +172,11 @@
       <button class="contact-button" onclick="mostrarContacto()">Contáctame</button>
     </div>
 
-    <div id="contacto" style="display:none; text-align:center; margin-top: 30px;">
-      <div class="card" style="display:inline-block; text-align:left;">
+    <div id="contacto">
+      <div class="contact-card">
         <p><strong>🔗 LinkedIn:</strong> 
           <a href="https://www.linkedin.com/in/kinverli-masiel-rodriguez-escarza-a47600367/?originalSubdomain=pe" 
-             target="_blank" style="color:#6d28d9; font-weight:bold;">
+             target="_blank">
             Ir a mi perfil
           </a>
         </p>
@@ -156,7 +188,7 @@
   <script>
     function mostrarContacto() {
       var div = document.getElementById("contacto");
-      div.style.display = (div.style.display === "none") ? "block" : "none";
+      div.classList.toggle("mostrar");
     }
   </script>
 </body>
